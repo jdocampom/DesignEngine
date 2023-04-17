@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ink_mobile_helpers",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/inkaviation/ink_mobile_helpers",
+      "state" : {
+        "branch" : "main",
+        "revision" : "07151fea157440fb488e393abff419a5250a72c3"
+      }
+    }
+  ],
+  "version" : 2
+}

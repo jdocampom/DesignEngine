@@ -1,0 +1,42 @@
+{
+  "view": {
+    "id": "search_passenger",     
+    "header": {
+
+    },
+    "details": {      
+      "rows": [
+        {
+          "id": 1,
+          "fields": [
+            {
+              "id": "PNR_id",
+              "label": "PNR",
+              "mandatory": true,              
+              "contents": {
+                "type": "TextInput",
+                "placeholder": "Please enter a PNR i.e P3DG45",
+                "text": ""
+              }
+            }            
+          ]
+        },
+        {
+          "id": 2,
+          "fields": [
+            {
+              "id": "suername_id",
+              "label": "Surname",
+              "width":"100%",              
+              "contents": {
+                "type": "TextInput",
+                "placeholder": "Please enter a surname",
+                "text": ""
+              }
+            }        
+          ]
+        }                          
+      ] 
+    }
+  }
+}
