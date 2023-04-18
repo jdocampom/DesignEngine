@@ -5,29 +5,49 @@
 //  Created by Juan Diego Ocampo on 2023-03-09.
 //
 
+import InkTouchHelpers
+import ITUIBuilderKit
 import Foundation
 
 @MainActor final class ContentViewModel: ObservableObject {
     
-    var title: String {
-        let title = viewElement.view.id
-        let formattedTitle = title.replacingOccurrences(of: "_", with: " ")
-        return formattedTitle.capitalized
+    @Published var title: String = .empty
+    
+        
+    var detailRows: [InkUIBuilderKitView.View.Detail.Row] {
+        guard let rows = viewElement.view.details?.rows else {
+            fatalError()
+        }
+        return rows
     }
     
-    var detailsRows: [Row] {
-        guard let items = viewElement.view.details.rows else {
-            return []
+    var footerRows: [InkUIBuilderKitView.View.Footer.Row] {
+        guard let rows = viewElement.view.footer?.rows else {
+            fatalError()
         }
-        return items
+        return rows
     }
+    
+//    var detailsRows: [Row] {
+//        guard let items = viewElement.view?.details?.rows else {
+//            return []
+//        }
+//        return items
+//    }
+//    
+//    var footerRows: [Row] {
+//        guard let items = viewElement.view?.footer?.rows else {
+//            return []
+//        }
+//        return items
+//    }
     
     
 //    var detailsTextInputViews: [RowItem] {
 //        return detailsRows.flatMap { $0.fields.filter { $0.contents.type == "TextInput" } }
 //    }
     
-    private(set) var viewElement: JSONFile
+    private(set) var viewElement: InkUIBuilderKitView//JSONFile
     
     
     
@@ -35,6 +55,10 @@ import Foundation
         viewElement =  Bundle.main.decode("passenger_on_demand.json")
     }
     
-    func test() {}
+    func updateUI() {
+        title = viewElement.view.title
+    }
+    
+    
     
 }

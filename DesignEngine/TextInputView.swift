@@ -8,7 +8,7 @@
 import InkTouchHelpers
 import SwiftUI
 
-struct TextInputView: View {
+struct ITUIBuilderTextInputView: View {
     
     private let outerCornerRadius: CGFloat = 10
     
@@ -17,6 +17,8 @@ struct TextInputView: View {
     private let outerHorizontalPadding: CGFloat = 15
     
     private let outerVerticalPadding: CGFloat = 5
+    
+    private var labelText: String
     
     private var placeholderText: String
     
@@ -34,38 +36,46 @@ struct TextInputView: View {
                 .padding(.horizontal, outerHorizontalPadding + borderWidth)
                 .padding(.vertical, outerVerticalPadding + borderWidth)
             HStack {
-                Spacer(minLength: 2 * outerVerticalPadding)
+                Spacer(minLength: outerHorizontalPadding)
+                Text(labelText)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(1)
+                    .padding(.leading, outerHorizontalPadding)
+                    .frame(width: 100)
                 TextField(placeholderText, text: textBinding)
                     .foregroundColor(.primary)
                     .padding(.horizontal, outerHorizontalPadding + (2 * borderWidth))
                     .padding(.vertical, outerVerticalPadding + (2 * borderWidth))
-                    .multilineTextAlignment(.leading)
+                    .multilineTextAlignment(.trailing)
                     .autocapitalization(.allCharacters)
                     .autocorrectionDisabled()
                     .keyboardType(.asciiCapable)
-                Spacer(minLength: 2 * outerVerticalPadding)
+                Spacer(minLength: outerHorizontalPadding)
             }
         }
         .frame(height: .largeRowHeight)
     }
     
     init(
-        withPlaceholder placeholder: String,
+        withLabelText labelText: String,
+        andPlaceholder placeholder: String,
         andText text: Binding<String>
     ){
-        placeholderText = placeholder
-        textBinding = text
+        self.labelText = labelText
+        self.placeholderText = placeholder
+        self.textBinding = text
     }
     
 }
 
-struct TextInputView_Previews: PreviewProvider {
+struct ITUIBuilderTextInputView_Previews: PreviewProvider {
 
     private static var mockTest = "Test"
 
     static var previews: some View {
         Group {
-            TextInputView(withPlaceholder: "", andText: .constant(mockTest))
+            ITUIBuilderTextInputView(withLabelText: "PNR", andPlaceholder: "Please enter a PNR i.e P3DG45", andText: .constant(.empty))
                 .previewDevice(PreviewDevice(rawValue: "iPhone 7"))
         }
     }
