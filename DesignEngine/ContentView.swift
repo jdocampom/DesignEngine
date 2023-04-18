@@ -5,7 +5,7 @@
 //  Created by Juan Diego Ocampo on 2023-03-09.
 //
 
-import InkTouchHelpers
+import ITUIBuilderKit
 import SwiftUI
 
 struct ContentView: View {
@@ -17,45 +17,22 @@ struct ContentView: View {
         NavigationView {
             
             VStack(alignment: .leading, spacing: .zero) {
+                
+                VStack(alignment: .leading, spacing: .zero) {
+                    ForEach(viewModel.headerRows, id: \.id) { row in
+                        ForEach(row.fields, id: \.id) { field in
+                            Text(field.id)
+                        }
+                    }
+                }
+                
                 ScrollView {
                     ForEach(viewModel.detailRows, id: \.id) { row in
-//                        var field = row.firstRow
-//
-//                        var fo = row.fields?.first?.contents.t
-                        
-                        if let fields = row.fields, var first = fields.first {
-                            
-                            if first.contents.type == "TextInput" {
-                                
-                                ITUIBuilderTextInputView(
-                                    withLabelText: first.label ?? .empty,
-                                    andPlaceholder: first.contents.placeholder ?? .empty,
-                                    andText: Binding(
-                                        get: {
-                                            first.contents.text ?? .empty
-                                        },
-                                        set: { newValue in
-                                            first.contents.text = newValue
-                                        }
-                                    )
-                                )
+                        ForEach(row.fields, id: \.id) { field in
+                            if field.contents.type == "TextInput" {
+                                ITTextInputView(withRow: row, andTintColor: .brandPrimary)
                             }
-                            
                         }
-                        
-//                        if row.fields?.first?.contents.type == "TextInput" {
-//                            ITUIBuilderTextInputView(
-//                                withPlaceholder: row.fields?.first?.contents.placeholder ?? .empty,
-//                                andText: Binding(
-//                                    get: {
-//                                        row.fields?.first?.contents.text ?? .empty
-//                                    },
-//                                    set: { newValue in
-//                                        row.fields?.first?.contents.text = newValue
-//                                    }
-//                                )
-//                            )
-//                        }
                     }
                 }
                 
@@ -63,48 +40,13 @@ struct ContentView: View {
                 
                 VStack(alignment: .leading, spacing: .zero) {
                     ForEach(viewModel.footerRows, id: \.id) { row in
-//                        var field = row.firstRow
-                        
-                        if let fields = row.fields, let first = fields.first, let contents = first.contents, let type = contents.type {
-                            
-                            if type == "Button" {
-                                
-                                ITUIBuilderButton(
-                                    title: contents.text ?? "Empty",
-                                    backgroundColor: .brandPrimary,
-                                    action: {
-                                        HapticFeedback.warning.vibrate()
-                                    }
-                                )
+                        ForEach(row.fields, id: \.id) { field in
+                            if field.contents.type == "Button" {
+                                ITButtonView(withRow: row, andTintColor: .brandPrimary)
                             }
-                            
                         }
-                        
-//                        if row.fields?.first?.contents.type == "Button" {
-//                            ITUIBuilderButton(
-//                                title: row.fields?.first?.contents.text ?? "Empty",
-//                                backgroundColor: .brandPrimary,
-//                                action: {
-//                                    HapticFeedback.warning.vibrate()
-//                                }
-//                            )
-//                        }
                     }
                 }
-                
-                //                List {
-                //                    Section {
-                //                        Button {
-                //                            dump(viewModel.detailsRows)
-                //                        } label: {
-                //
-                //                        }
-                //                    } header: {
-                //                        Text("Test")
-                //                    } footer: {
-                //                        Text("Test Section")
-                //                    }
-                //                }
                 
             }
             

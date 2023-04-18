@@ -5,25 +5,30 @@
 //  Created by Juan Diego Ocampo on 2023-03-09.
 //
 
-import InkTouchHelpers
 import ITUIBuilderKit
 import Foundation
 
 @MainActor final class ContentViewModel: ObservableObject {
     
-    @Published var title: String = .empty
+    @Published var title: String = ""
     
+    var headerRows: [ITUIBuilderKitView.Row] {
+        guard let rows = viewElement.view.header?.rows else {
+            return []
+        }
+        return rows
+    }
         
-    var detailRows: [InkUIBuilderKitView.View.Detail.Row] {
+    var detailRows: [ITUIBuilderKitView.Row] {
         guard let rows = viewElement.view.details?.rows else {
-            fatalError()
+            return []
         }
         return rows
     }
     
-    var footerRows: [InkUIBuilderKitView.View.Footer.Row] {
+    var footerRows: [ITUIBuilderKitView.Row] {
         guard let rows = viewElement.view.footer?.rows else {
-            fatalError()
+            return []
         }
         return rows
     }
@@ -47,7 +52,7 @@ import Foundation
 //        return detailsRows.flatMap { $0.fields.filter { $0.contents.type == "TextInput" } }
 //    }
     
-    private(set) var viewElement: InkUIBuilderKitView//JSONFile
+    private(set) var viewElement: ITUIBuilderKitView//JSONFile
     
     
     

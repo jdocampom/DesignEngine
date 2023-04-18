@@ -5,10 +5,9 @@
 //  Created by Juan Diego Ocampo on 2023-03-09.
 //
 
-import InkTouchHelpers
 import SwiftUI
 
-struct ITUIBuilderTextInputView: View {
+struct InkUIBuilderTextInput: View {
     
     @Environment(\.colorScheme) private var colorScheme
     
@@ -40,7 +39,7 @@ struct ITUIBuilderTextInputView: View {
                 .padding(.horizontal, outerHorizontalPadding + borderWidth)
                 .padding(.vertical, outerVerticalPadding + borderWidth)
             HStack {
-//                Spacer(minLength: outerHorizontalPadding)
+                //                Spacer(minLength: outerHorizontalPadding)
                 Text(labelText)
                     .font(.subheadline)
                     .multilineTextAlignment(.leading)
@@ -58,7 +57,7 @@ struct ITUIBuilderTextInputView: View {
                 Spacer(minLength: outerHorizontalPadding)
             }
         }
-        .frame(height: .largeRowHeight)
+        .frame(height: 60.0)
     }
     
     init(
@@ -73,29 +72,15 @@ struct ITUIBuilderTextInputView: View {
     
 }
 
-struct ITUIBuilderTextInputView_Previews: PreviewProvider {
-
+struct InkUIBuilderTextInput_Previews: PreviewProvider {
+    
     private static var mockTest = "Test"
-
+    
     static var previews: some View {
         Group {
-            ITUIBuilderTextInputView(withLabelText: "PNR", andPlaceholder: "Please enter a PNR i.e P3DG45", andText: .constant(.empty))
+            InkUIBuilderTextInput(withLabelText: "PNR", andPlaceholder: "Please enter a PNR i.e P3DG45", andText: .constant(""))
                 .previewDevice(PreviewDevice(rawValue: "iPhone 7"))
         }
     }
-
-}
-
-
-extension View {
-    func placeholder<Content: View>(
-        when shouldShow: Bool,
-        alignment: Alignment = .leading,
-        @ViewBuilder placeholder: () -> Content) -> some View {
-            
-            ZStack(alignment: alignment) {
-                placeholder().opacity(shouldShow ? 1 : 0)
-                self
-            }
-        }
+    
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ITUIBuilderButton: View {
+struct InkUIBuilderButton: View {
     
     private let outerCornerRadius: CGFloat = 10
         
@@ -21,7 +21,6 @@ struct ITUIBuilderButton: View {
     
     var body: some View {
         ZStack(alignment: .center) {
-            Color.systemBackground
             RoundedRectangle(cornerRadius: outerCornerRadius)
                 .foregroundColor(backgroundColor)
                 .padding(.horizontal, outerHorizontalPadding)
@@ -32,15 +31,18 @@ struct ITUIBuilderButton: View {
                 Text(title)
                     .foregroundColor(.white)
             }
+            .frame(height: 80)
+            .frame(maxWidth: .infinity)
+            .padding(.horizontal, outerHorizontalPadding)
         }
         .frame(height: 80)
     }
     
 }
 
-struct ITUIBuilderButton_Previews: PreviewProvider {
+struct InkUIBuilderButton_Previews: PreviewProvider {
     static var previews: some View {
-        ITUIBuilderButton(title: "", backgroundColor: .red, action: {})
+        InkUIBuilderButton(title: "", backgroundColor: .red, action: {})
             .previewDevice(PreviewDevice(rawValue: "iPhone 7"))
     }
 }

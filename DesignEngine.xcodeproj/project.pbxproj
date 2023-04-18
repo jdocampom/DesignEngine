@@ -14,9 +14,8 @@
 		866ADC0929BA29340015E4CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866ADC0829BA29340015E4CA /* Preview Assets.xcassets */; };
 		866ADC1429BA2F8A0015E4CA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC1329BA2F8A0015E4CA /* ViewModel.swift */; };
 		866ADC1829BA397E0015E4CA /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC1729BA397E0015E4CA /* Bundle+Ext.swift */; };
-		866ADC1A29BA3B950015E4CA /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC1929BA3B950015E4CA /* TextInputView.swift */; };
+		868AE97629EF37F20010E4A6 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AE97529EF37F20010E4A6 /* SwiftUIView.swift */; };
 		86DBD9C429EEC71400D060D6 /* ITUIBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 86DBD9C329EEC71400D060D6 /* ITUIBuilderKit */; };
-		86EA1CB529EDDE8000AFF2BD /* InkTouchHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 86EA1CB429EDDE8000AFF2BD /* InkTouchHelpers */; };
 		86EA1CB729EDE72500AFF2BD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EA1CB629EDE72500AFF2BD /* Colors.xcassets */; };
 		86EA1CB929EDE75200AFF2BD /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA1CB829EDE75200AFF2BD /* Color+Ext.swift */; };
 		86EA1CBD29EE040E00AFF2BD /* ITUIBuilderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA1CBC29EE040E00AFF2BD /* ITUIBuilderButton.swift */; };
@@ -31,7 +30,7 @@
 		866ADC0829BA29340015E4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		866ADC1329BA2F8A0015E4CA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		866ADC1729BA397E0015E4CA /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
-		866ADC1929BA3B950015E4CA /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		868AE97529EF37F20010E4A6 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		86DBD9C129EEC5AB00D060D6 /* ITUIBuilderKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ITUIBuilderKit; sourceTree = "<group>"; };
 		86EA1CB629EDE72500AFF2BD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		86EA1CB829EDE75200AFF2BD /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
@@ -44,7 +43,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				86DBD9C429EEC71400D060D6 /* ITUIBuilderKit in Frameworks */,
-				86EA1CB529EDDE8000AFF2BD /* InkTouchHelpers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +85,10 @@
 				866ADC0729BA29340015E4CA /* Preview Content */,
 				860B628F29C5071700D0F399 /* passenger_on_demand.json */,
 				866ADC1729BA397E0015E4CA /* Bundle+Ext.swift */,
-				866ADC1929BA3B950015E4CA /* TextInputView.swift */,
 				86EA1CB629EDE72500AFF2BD /* Colors.xcassets */,
 				86EA1CB829EDE75200AFF2BD /* Color+Ext.swift */,
 				86EA1CBC29EE040E00AFF2BD /* ITUIBuilderButton.swift */,
+				868AE97529EF37F20010E4A6 /* SwiftUIView.swift */,
 			);
 			path = DesignEngine;
 			sourceTree = "<group>";
@@ -127,7 +125,6 @@
 			);
 			name = DesignEngine;
 			packageProductDependencies = (
-				86EA1CB429EDDE8000AFF2BD /* InkTouchHelpers */,
 				86DBD9C329EEC71400D060D6 /* ITUIBuilderKit */,
 			);
 			productName = DesignEngine;
@@ -159,7 +156,6 @@
 			);
 			mainGroup = 866ADBF529BA29320015E4CA;
 			packageReferences = (
-				86EA1CB329EDDE8000AFF2BD /* XCRemoteSwiftPackageReference "ink_mobile_helpers" */,
 			);
 			productRefGroup = 866ADBFF29BA29320015E4CA /* Products */;
 			projectDirPath = "";
@@ -190,9 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86EA1CBD29EE040E00AFF2BD /* ITUIBuilderButton.swift in Sources */,
+				868AE97629EF37F20010E4A6 /* SwiftUIView.swift in Sources */,
 				866ADC0429BA29320015E4CA /* ContentView.swift in Sources */,
 				866ADC0229BA29320015E4CA /* DesignEngineApp.swift in Sources */,
-				866ADC1A29BA3B950015E4CA /* TextInputView.swift in Sources */,
 				866ADC1829BA397E0015E4CA /* Bundle+Ext.swift in Sources */,
 				866ADC1429BA2F8A0015E4CA /* ViewModel.swift in Sources */,
 				86EA1CB929EDE75200AFF2BD /* Color+Ext.swift in Sources */,
@@ -252,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -306,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +358,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,26 +395,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		86EA1CB329EDDE8000AFF2BD /* XCRemoteSwiftPackageReference "ink_mobile_helpers" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/inkaviation/ink_mobile_helpers";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		86DBD9C329EEC71400D060D6 /* ITUIBuilderKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ITUIBuilderKit;
-		};
-		86EA1CB429EDDE8000AFF2BD /* InkTouchHelpers */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86EA1CB329EDDE8000AFF2BD /* XCRemoteSwiftPackageReference "ink_mobile_helpers" */;
-			productName = InkTouchHelpers;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
