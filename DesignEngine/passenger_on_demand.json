@@ -3,9 +3,6 @@
     "view": {
         "id": "search_passenger",
         "header": {
-            
-        },
-        "details": {
             "rows": [
                 {
                     "id": 1,
@@ -38,6 +35,9 @@
                     ]
                 }
             ]
+        },
+        "details": {
+            
         },
         "footer": {
             "rows": [
