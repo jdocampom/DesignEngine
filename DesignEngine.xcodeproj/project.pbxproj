@@ -12,13 +12,10 @@
 		866ADC0429BA29320015E4CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC0329BA29320015E4CA /* ContentView.swift */; };
 		866ADC0629BA29340015E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866ADC0529BA29340015E4CA /* Assets.xcassets */; };
 		866ADC0929BA29340015E4CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866ADC0829BA29340015E4CA /* Preview Assets.xcassets */; };
-		866ADC1429BA2F8A0015E4CA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC1329BA2F8A0015E4CA /* ViewModel.swift */; };
 		866ADC1829BA397E0015E4CA /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC1729BA397E0015E4CA /* Bundle+Ext.swift */; };
-		868AE97629EF37F20010E4A6 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AE97529EF37F20010E4A6 /* SwiftUIView.swift */; };
 		86DBD9C429EEC71400D060D6 /* ITUIBuilderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 86DBD9C329EEC71400D060D6 /* ITUIBuilderKit */; };
 		86EA1CB729EDE72500AFF2BD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86EA1CB629EDE72500AFF2BD /* Colors.xcassets */; };
 		86EA1CB929EDE75200AFF2BD /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA1CB829EDE75200AFF2BD /* Color+Ext.swift */; };
-		86EA1CBD29EE040E00AFF2BD /* ITUIBuilderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA1CBC29EE040E00AFF2BD /* ITUIBuilderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +25,10 @@
 		866ADC0329BA29320015E4CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		866ADC0529BA29340015E4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		866ADC0829BA29340015E4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		866ADC1329BA2F8A0015E4CA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		866ADC1729BA397E0015E4CA /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
-		868AE97529EF37F20010E4A6 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		86DBD9C129EEC5AB00D060D6 /* ITUIBuilderKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ITUIBuilderKit; sourceTree = "<group>"; };
 		86EA1CB629EDE72500AFF2BD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		86EA1CB829EDE75200AFF2BD /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
-		86EA1CBC29EE040E00AFF2BD /* ITUIBuilderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITUIBuilderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +73,6 @@
 			children = (
 				866ADC0129BA29320015E4CA /* DesignEngineApp.swift */,
 				866ADC0329BA29320015E4CA /* ContentView.swift */,
-				866ADC1329BA2F8A0015E4CA /* ViewModel.swift */,
 				860B629129C5228600D0F399 /* Data Models */,
 				866ADC0529BA29340015E4CA /* Assets.xcassets */,
 				866ADC0729BA29340015E4CA /* Preview Content */,
@@ -87,8 +80,6 @@
 				866ADC1729BA397E0015E4CA /* Bundle+Ext.swift */,
 				86EA1CB629EDE72500AFF2BD /* Colors.xcassets */,
 				86EA1CB829EDE75200AFF2BD /* Color+Ext.swift */,
-				86EA1CBC29EE040E00AFF2BD /* ITUIBuilderButton.swift */,
-				868AE97529EF37F20010E4A6 /* SwiftUIView.swift */,
 			);
 			path = DesignEngine;
 			sourceTree = "<group>";
@@ -185,12 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86EA1CBD29EE040E00AFF2BD /* ITUIBuilderButton.swift in Sources */,
-				868AE97629EF37F20010E4A6 /* SwiftUIView.swift in Sources */,
 				866ADC0429BA29320015E4CA /* ContentView.swift in Sources */,
 				866ADC0229BA29320015E4CA /* DesignEngineApp.swift in Sources */,
 				866ADC1829BA397E0015E4CA /* Bundle+Ext.swift in Sources */,
-				866ADC1429BA2F8A0015E4CA /* ViewModel.swift in Sources */,
 				86EA1CB929EDE75200AFF2BD /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
