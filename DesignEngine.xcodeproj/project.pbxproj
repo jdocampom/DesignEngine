@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		860B629029C5071700D0F399 /* passenger_on_demand.json in Resources */ = {isa = PBXBuildFile; fileRef = 860B628F29C5071700D0F399 /* passenger_on_demand.json */; };
+		860CD82A29F03C9400B51045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860CD82929F03C9400B51045 /* AppDelegate.swift */; };
 		866ADC0229BA29320015E4CA /* DesignEngineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC0129BA29320015E4CA /* DesignEngineApp.swift */; };
 		866ADC0429BA29320015E4CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866ADC0329BA29320015E4CA /* ContentView.swift */; };
 		866ADC0629BA29340015E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866ADC0529BA29340015E4CA /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		860B628F29C5071700D0F399 /* passenger_on_demand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passenger_on_demand.json; sourceTree = "<group>"; };
+		860CD82929F03C9400B51045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		860CD82B29F03D3F00B51045 /* DesignEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DesignEngine.entitlements; sourceTree = "<group>"; };
 		866ADBFE29BA29320015E4CA /* DesignEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		866ADC0129BA29320015E4CA /* DesignEngineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignEngineApp.swift; sourceTree = "<group>"; };
 		866ADC0329BA29320015E4CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		866ADC0029BA29320015E4CA /* DesignEngine */ = {
 			isa = PBXGroup;
 			children = (
+				860CD82B29F03D3F00B51045 /* DesignEngine.entitlements */,
 				866ADC0129BA29320015E4CA /* DesignEngineApp.swift */,
 				866ADC0329BA29320015E4CA /* ContentView.swift */,
 				860B629129C5228600D0F399 /* Data Models */,
@@ -80,6 +84,7 @@
 				866ADC1729BA397E0015E4CA /* Bundle+Ext.swift */,
 				86EA1CB629EDE72500AFF2BD /* Colors.xcassets */,
 				86EA1CB829EDE75200AFF2BD /* Color+Ext.swift */,
+				860CD82929F03C9400B51045 /* AppDelegate.swift */,
 			);
 			path = DesignEngine;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				866ADC0429BA29320015E4CA /* ContentView.swift in Sources */,
 				866ADC0229BA29320015E4CA /* DesignEngineApp.swift in Sources */,
 				866ADC1829BA397E0015E4CA /* Bundle+Ext.swift in Sources */,
+				860CD82A29F03C9400B51045 /* AppDelegate.swift in Sources */,
 				86EA1CB929EDE75200AFF2BD /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DesignEngine/DesignEngine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignEngine/Preview Content\"";
@@ -335,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DesignEngine/DesignEngine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignEngine/Preview Content\"";

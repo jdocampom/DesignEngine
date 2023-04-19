@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         ITScreenView(
             withViewElement: Bundle.main.decode("passenger_on_demand.json"),
-            andTintColor: .brandPrimary
+            andTintColor: .accentColor
         )
     }
     
