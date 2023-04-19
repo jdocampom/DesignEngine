@@ -37,7 +37,47 @@
             ]
         },
         "details": {
-            
+            "rows": [
+                {
+                    "id": 1,
+                    "fields": [
+                        {
+                            "id": "flight_row",
+                            "label": "IN1015 (INK-BOG 17:00)",
+                            "contents": {
+                                "type": "TextLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "fields": [
+                        {
+                            "id": "flight_row",
+                            "label": "IN1273 (INK-MAD 21:00)",
+                            "contents": {
+                                "type": "TextLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "fields": [
+                        {
+                            "id": "flight_row",
+                            "label": "IN8956 (INK-MAN 23:00)",
+                            "contents": {
+                                "type": "TextLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         "footer": {
             "rows": [
