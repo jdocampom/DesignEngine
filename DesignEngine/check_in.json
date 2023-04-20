@@ -156,6 +156,59 @@
                             }
                         }
                     ]
+                },
+                {
+                    "id": 6,
+                    "fields": [
+                        {
+                            "id": "baggage_weight",
+                            "label": "Weight (kg)",
+                            "mandatory": true,
+                            "contents": {
+                                "type": "TextInput",
+                                "placeholder": "i.e 15",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "id": "add_bagtag_button",
+                            "label": "",
+                            "mandatory": false,
+                            "contents": {
+                                "type": "Button",
+                                "subType": "AddBagTag",
+                                "text": "Add Tag",
+                                "onClickAction": {
+                                    "action": "Server",
+                                    "fields": {
+                                        "path": "addBagTag",
+                                        "params": {
+                                            "passengerID": "passenger_id",
+                                            "seat": "seat"
+                                        },
+                                        "onSucessAction": {
+                                            "action": "Navigation",
+                                            "fields": {
+                                                "path": "seat_plan",
+                                                "params": {
+                                                    "passengers": "seatPlan"
+                                                }
+                                            }
+                                        },
+                                        "onErrorAction": {
+                                            "action": "NotificationAlert",
+                                            "fields": {
+                                                "params": {
+                                                    "title": "error",
+                                                    "message": "responseError"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 }
             ]
         },
@@ -165,11 +218,12 @@
                     "id": 1,
                     "fields": [
                         {
-                            "id": "flight_row",
-                            "label": "IN1015 (INK-BOG 17:00)",
+                            "id": "baggage_tag_cell_1",
+                            "label": "LIVE",
                             "contents": {
-                                "type": "TextLabel",
-                                "text": ""
+                                "type": "BaggageStatusCell",
+                                "placeholder": "9 kg",
+                                "text": "3020112233"
                             }
                         }
                     ]
@@ -178,11 +232,12 @@
                     "id": 2,
                     "fields": [
                         {
-                            "id": "flight_row",
-                            "label": "IN1273 (INK-MAD 21:00)",
+                            "id": "baggage_tag_cell_2",
+                            "label": "UNPRINTED",
                             "contents": {
-                                "type": "TextLabel",
-                                "text": ""
+                                "type": "BaggageStatusCell",
+                                "placeholder": "11 kg",
+                                "text": "3020112234"
                             }
                         }
                     ]
@@ -191,11 +246,110 @@
                     "id": 3,
                     "fields": [
                         {
-                            "id": "flight_row",
-                            "label": "IN8956 (INK-MAN 23:00)",
+                            "id": "baggage_tag_cell_3",
+                            "label": "CANCEL",
                             "contents": {
-                                "type": "TextLabel",
-                                "text": ""
+                                "type": "BaggageStatusCell",
+                                "placeholder": "18 kg",
+                                "text": "3020112235"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "fields": [
+                        {
+                            "id": "baggage_tag_cell_4",
+                            "label": "INACTIVE",
+                            "contents": {
+                                "type": "BaggageStatusCell",
+                                "placeholder": "23 kg",
+                                "text": "3020112236"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "fields": [
+                        {
+                            "id": "baggage_tag_cell_5",
+                            "label": "LIVE",
+                            "contents": {
+                                "type": "BaggageStatusCell",
+                                "placeholder": "9 kg",
+                                "text": "3020112233"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "fields": [
+                        {
+                            "id": "baggage_tag_cell_6",
+                            "label": "UNPRINTED",
+                            "contents": {
+                                "type": "BaggageStatusCell",
+                                "placeholder": "11 kg",
+                                "text": "3020112234"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "fields": [
+                        {
+                            "id": "baggage_tag_cell_7",
+                            "label": "CANCEL",
+                            "contents": {
+                                "type": "BaggageStatusCell",
+                                "placeholder": "18 kg",
+                                "text": "3020112235"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "fields": [
+                        {
+                            "id": "baggage_tag_cell_8",
+                            "label": "INACTIVE",
+                            "contents": {
+                                "type": "BaggageStatusCell",
+                                "placeholder": "23 kg",
+                                "text": "3020112236"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "fields": [
+                        {
+                            "id": "baggage_tag_cell_9",
+                            "label": "LIVE",
+                            "contents": {
+                                "type": "BaggageStatusCell",
+                                "placeholder": "9 kg",
+                                "text": "3020112233"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "fields": [
+                        {
+                            "id": "baggage_tag_cell_10",
+                            "label": "UNPRINTED",
+                            "contents": {
+                                "type": "BaggageStatusCell",
+                                "placeholder": "11 kg",
+                                "text": "3020112234"
                             }
                         }
                     ]
