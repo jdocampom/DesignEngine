@@ -149,7 +149,7 @@
                     "fields": [
                         {
                             "id": "baggage_allowance",
-                            "label": "20 bags",
+                            "label": "20 Pieces",
                             "contents": {
                                 "type": "HorizontalTextLabel",
                                 "text": "Allowance"
