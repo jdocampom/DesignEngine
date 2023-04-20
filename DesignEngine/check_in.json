@@ -1,0 +1,253 @@
+
+{
+    "view": {
+        "id": "check-in",
+        "embedInNavigationView": true,
+        "showLargeTitle": false,
+        "header": {
+            "rows": [
+                {
+                    "id": 1,
+                    "fields": [
+                        {
+                            "id": "passenger_name",
+                            "label": "SURNAME/FIRSTNAME",
+                            "contents": {
+                                "type": "TitleLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "fields": [
+                        {
+                            "id": "apis_status_indicator_1",
+                            "label": "OK",
+                            "contents": {
+                                "type": "StatusLabel",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "id": "apis_status_indicator_2",
+                            "label": "FLAG",
+                            "contents": {
+                                "type": "StatusLabel",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "id": "apis_status_indicator_3",
+                            "label": "WARNING",
+                            "contents": {
+                                "type": "StatusLabel",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "id": "apis_status_indicator_4",
+                            "label": "CANCEL",
+                            "contents": {
+                                "type": "StatusLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "fields": [
+                        {
+                            "id": "flight_number",
+                            "label": "IN0117",
+                            "contents": {
+                                "type": "VerticalTextLabel",
+                                "text": "Flight Number"
+                            }
+                        },
+                        {
+                            "id": "flight_date",
+                            "label": "20APR-21:00",
+                            "contents": {
+                                "type": "VerticalTextLabel",
+                                "text": "Departure Date"
+                            }
+                        },
+                        {
+                            "id": "flight_itinerary",
+                            "label": "INK-BOG",
+                            "contents": {
+                                "type": "VerticalTextLabel",
+                                "text": "Itinerary"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "fields": [
+                        {
+                            "id": "is_infant",
+                            "label": "NO",
+                            "contents": {
+                                "type": "VerticalTextLabel",
+                                "text": "Infant"
+                            }
+                        },
+                        {
+                            "id": "sequence_number",
+                            "label": "A83MD3",
+                            "contents": {
+                                "type": "VerticalTextLabel",
+                                "text": "Sequence"
+                            }
+                        },
+                        {
+                            "id": "seat_plan_button",
+                            "label": "",
+                            "mandatory": false,
+                            "contents": {
+                                "type": "Button",
+                                "subType": "SeatPlan",
+                                "text": "23A",
+                                "onClickAction": {
+                                    "action": "Server",
+                                    "fields": {
+                                        "path": "changeSeat",
+                                        "params": {
+                                            "passengerID": "passenger_id",
+                                            "seat": "seat"
+                                        },
+                                        "onSucessAction": {
+                                            "action": "Navigation",
+                                            "fields": {
+                                                "path": "seat_plan",
+                                                "params": {
+                                                    "passengers": "seatPlan"
+                                                }
+                                            }
+                                        },
+                                        "onErrorAction": {
+                                            "action": "NotificationAlert",
+                                            "fields": {
+                                                "params": {
+                                                    "title": "error",
+                                                    "message": "responseError"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "fields": [
+                        {
+                            "id": "baggage_allowance",
+                            "label": "20 bags",
+                            "contents": {
+                                "type": "HorizontalTextLabel",
+                                "text": "Allowance"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "details": {
+            "rows": [
+                {
+                    "id": 1,
+                    "fields": [
+                        {
+                            "id": "flight_row",
+                            "label": "IN1015 (INK-BOG 17:00)",
+                            "contents": {
+                                "type": "TextLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "fields": [
+                        {
+                            "id": "flight_row",
+                            "label": "IN1273 (INK-MAD 21:00)",
+                            "contents": {
+                                "type": "TextLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "fields": [
+                        {
+                            "id": "flight_row",
+                            "label": "IN8956 (INK-MAN 23:00)",
+                            "contents": {
+                                "type": "TextLabel",
+                                "text": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "footer": {
+            "rows": [
+                {
+                    "id": 1,
+                    "fields": [
+                        {
+                            "id": "check_in",
+                            "label": "",
+                            "mandatory": false,
+                            "contents": {
+                                "type": "Button",
+                                "subType": "CheckIn",
+                                "text": "Check-In",
+                                "onClickAction": {
+                                    "action": "Server",
+                                    "fields": {
+                                        "path": "checkPassenger",
+                                        "params": {
+                                            "surname":"suername_id",
+                                            "pnr":"PNR_id"
+                                        },
+                                        "onSucessAction": {
+                                            "action": "Navigation",
+                                            "fields": {
+                                                "path": "passenger_details",
+                                                "params": {
+                                                    "passengers": "checkPassenger"
+                                                }
+                                            }
+                                        },
+                                        "onErrorAction": {
+                                            "action": "NotificationAlert",
+                                            "fields": {
+                                                "params": {
+                                                    "title": "error",
+                                                    "message": "responseError"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
