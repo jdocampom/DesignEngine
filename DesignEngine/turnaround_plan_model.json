@@ -1,0 +1,178 @@
+
+{
+    "title": "Jet2 Turn Demo",
+    "placeholderText": "No Events",
+    "tintColor": "6E31D9",
+    "events": [
+        {
+            "id": 1,
+            "title": "Briefing",
+            "subtitle": "Completed Briefing",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 2,
+            "title": "Clear from FOD",
+            "subtitle": "Clearance Received",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 3,
+            "title": "Actual In-Block Time",
+            "subtitle": "Date",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": false,
+            "hasDateInput": true
+        },
+        {
+            "id": 4,
+            "title": "Passenger Disembarked",
+            "subtitle": "Completed Disembark",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 5,
+            "title": "Security Declaration Signed",
+            "subtitle": "Completed Signing",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 6,
+            "title": "Passengers Embark",
+            "subtitle": "Completed Embark",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 7,
+            "title": "Unload Baggage",
+            "subtitle": "Completed Unload",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 8,
+            "title": "Load Baggage",
+            "subtitle": "Completed Load",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 9,
+            "title": "Catering Checks",
+            "subtitle": "Completed Checks",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 10,
+            "title": "Fuel Aircraft",
+            "subtitle": "Completed Refuel",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 11,
+            "title": "ARC Sign",
+            "subtitle": "Completed Signing",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 12,
+            "title": "Pilot Sign Loadsheet",
+            "subtitle": "Completed Signing",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 13,
+            "title": "Doors Closed",
+            "subtitle": "Completed Verification",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 14,
+            "title": "Walkaround",
+            "subtitle": "Completed Walkaround",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 15,
+            "title": "Pushback",
+            "subtitle": "Pushback",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": true,
+            "hasDateInput": false
+        },
+        {
+            "id": 16,
+            "title": "Actual Off-Block Time",
+            "subtitle": "Date",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": false,
+            "hasDateInput": true
+        },
+        {
+            "id": 17,
+            "title": "Actual KABLOCK-Block Time",
+            "subtitle": "Date",
+            "lastModified": "2023-04-21T15:45:18+0000",
+            "submissionDate": "2023-04-21T15:45:18+0000",
+            "isFinished": false,
+            "hasBoolInput": false,
+            "hasDateInput": true
+        }
+    ]
+    
+}

@@ -1,0 +1,649 @@
+
+{
+    "view": {
+        "id": "turnaround_plan",
+        "embedInNavigationView": true,
+        "showLargeTitle": true,
+        "header": {
+        },
+        "details": {
+            "rows": [
+                {
+                    "id": 1,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "turnaround_plan_briefing_title",
+                                    "label": "Briefing",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "turnaround_plan_briefing_toggle",
+                                    "label": "Completed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "clear_from_fod_title",
+                                    "label": "Clear from FOD",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "clear_from_fod_toggle",
+                                    "label": "Cleared",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "actual_in_block_time_title",
+                                    "label": "Actual In-Block Time",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "actual_in_block_time_button",
+                                    "label": "",
+                                    "mandatory": false,
+                                    "contents": {
+                                        "type": "Button",
+                                        "subType": "Turnaround",
+                                        "text": "Set Time",
+                                        "onClickAction": {
+                                            "action": "Server",
+                                            "fields": {
+                                                "path": "setTurnaroundEvent",
+                                                "params": {
+                                                    "surname":"suername_id",
+                                                    "pnr":"PNR_id"
+                                                },
+                                                "onSucessAction": {
+                                                    "action": "Navigation",
+                                                    "fields": {
+                                                        "path": "passenger_details",
+                                                        "params": {
+                                                            "passengers": "checkPassenger"
+                                                        }
+                                                    }
+                                                },
+                                                "onErrorAction": {
+                                                    "action": "NotificationAlert",
+                                                    "fields": {
+                                                        "params": {
+                                                            "title": "error",
+                                                            "message": "responseError"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "passengers_disembark_title",
+                                    "label": "Passenger Disembarked",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "passengers_disembark_toggle",
+                                    "label": "Disembarked",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "security_declaration_signed_title",
+                                    "label": "Security Declaration Signed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "security_declaration_signed_toggle",
+                                    "label": "Signed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "passengers_embarked_title",
+                                    "label": "Passengers Embarked",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "passengers_embarked_toggle",
+                                    "label": "Embarked",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "unload_baggage_title",
+                                    "label": "Unload Baggage",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "unload_baggage_toggle",
+                                    "label": "Unloaded",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "load_baggage_title",
+                                    "label": "Load Baggage",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "load_baggage_toggle",
+                                    "label": "Load",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "catering_checks_title",
+                                    "label": "Catering Checks",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "catering_checks_togglr",
+                                    "label": "Done",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "fuel_aircraft_title",
+                                    "label": "Fuel Aircraft",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "fuel_aircraft_toggle",
+                                    "label": "Loaded",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "arc_title",
+                                    "label": "ARC Signed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "arc_toggle",
+                                    "label": "Signed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "pilot_sign_loadsheet_title",
+                                    "label": "Pilot Sign Loadsheet",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "pilot_sign_loadsheet_toggle",
+                                    "label": "Signed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "doors_closed_title",
+                                    "label": "Doors Closed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "doors_closed_toggle",
+                                    "label": "Closed",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "walkwaround_title",
+                                    "label": "Walkwaround",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "walkwaround_toggle",
+                                    "label": "Done",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "pushback_title",
+                                    "label": "Pushback",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "pushback_toggle",
+                                    "label": "Done",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "Toggle",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "items": [
+                        {
+                            "id": 1,
+                            "fields": [
+                                {
+                                    "id": "actual_off_block_time_title",
+                                    "label": "Actual Off-Block Time",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "placeholder": "",
+                                        "text": ""
+                                    }
+                                }
+                                
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "fields": [
+                                {
+                                    "id": "actual_off_block_time_button",
+                                    "label": "",
+                                    "mandatory": false,
+                                    "contents": {
+                                        "type": "Button",
+                                        "subType": "Turnaround",
+                                        "text": "Set Time",
+                                        "onClickAction": {
+                                            "action": "Server",
+                                            "fields": {
+                                                "path": "setTurnaroundEvent",
+                                                "params": {
+                                                    "surname":"suername_id",
+                                                    "pnr":"PNR_id"
+                                                },
+                                                "onSucessAction": {
+                                                    "action": "Navigation",
+                                                    "fields": {
+                                                        "path": "passenger_details",
+                                                        "params": {
+                                                            "passengers": "checkPassenger"
+                                                        }
+                                                    }
+                                                },
+                                                "onErrorAction": {
+                                                    "action": "NotificationAlert",
+                                                    "fields": {
+                                                        "params": {
+                                                            "title": "error",
+                                                            "message": "responseError"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        },
+        "footer": {
+            
+        }
+    }
+}

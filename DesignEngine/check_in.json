@@ -23,16 +23,67 @@
                     "id": 2,
                     "fields": [
                         {
+                            "id": "check_in",
+                            "label": "",
+                            "mandatory": false,
+                            "contents": {
+                                "type": "Button",
+                                "subType": "CheckIn",
+                                "text": "Check-In",
+                                "onClickAction": {
+                                    "action": "Server",
+                                    "fields": {
+                                        "path": "checkPassenger",
+                                        "params": {
+                                            "surname":"suername_id",
+                                            "pnr":"PNR_id"
+                                        },
+                                        "onSucessAction": {
+                                            "action": "Navigation",
+                                            "fields": {
+                                                "path": "passenger_details",
+                                                "params": {
+                                                    "passengers": "checkPassenger"
+                                                }
+                                            }
+                                        },
+                                        "onErrorAction": {
+                                            "action": "NotificationAlert",
+                                            "fields": {
+                                                "params": {
+                                                    "title": "error",
+                                                    "message": "responseError"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "rowWidth": 4,
+                    "fields": [
+                        
+                        
+                        {
                             "id": "apis_status_indicator_1",
+                            "rowWidth": 1,
                             "label": "OK",
                             "contents": {
                                 "type": "StatusLabel",
                                 "text": ""
                             }
                         },
+                        
+                        
+                        
                         {
                             "id": "apis_status_indicator_2",
                             "label": "FLAG",
+                            "rowWidth": 1,
                             "contents": {
                                 "type": "StatusLabel",
                                 "text": ""
@@ -40,24 +91,18 @@
                         },
                         {
                             "id": "apis_status_indicator_3",
+                            "rowWidth": 2,
                             "label": "WARNING",
                             "contents": {
                                 "type": "StatusLabel",
                                 "text": ""
                             }
-                        },
-                        {
-                            "id": "apis_status_indicator_4",
-                            "label": "CANCEL",
-                            "contents": {
-                                "type": "StatusLabel",
-                                "text": ""
-                            }
                         }
+                        
                     ]
                 },
                 {
-                    "id": 3,
+                    "id": 4,
                     "fields": [
                         {
                             "id": "flight_number",
@@ -86,7 +131,7 @@
                     ]
                 },
                 {
-                    "id": 4,
+                    "id": 5,
                     "fields": [
                         {
                             "id": "is_infant",
@@ -145,7 +190,7 @@
                     ]
                 },
                 {
-                    "id": 5,
+                    "id": 6,
                     "fields": [
                         {
                             "id": "baggage_allowance",
@@ -158,7 +203,7 @@
                     ]
                 },
                 {
-                    "id": 6,
+                    "id": 7,
                     "fields": [
                         {
                             "id": "baggage_weight",
@@ -357,51 +402,7 @@
             ]
         },
         "footer": {
-            "rows": [
-                {
-                    "id": 1,
-                    "fields": [
-                        {
-                            "id": "check_in",
-                            "label": "",
-                            "mandatory": false,
-                            "contents": {
-                                "type": "Button",
-                                "subType": "CheckIn",
-                                "text": "Check-In",
-                                "onClickAction": {
-                                    "action": "Server",
-                                    "fields": {
-                                        "path": "checkPassenger",
-                                        "params": {
-                                            "surname":"suername_id",
-                                            "pnr":"PNR_id"
-                                        },
-                                        "onSucessAction": {
-                                            "action": "Navigation",
-                                            "fields": {
-                                                "path": "passenger_details",
-                                                "params": {
-                                                    "passengers": "checkPassenger"
-                                                }
-                                            }
-                                        },
-                                        "onErrorAction": {
-                                            "action": "NotificationAlert",
-                                            "fields": {
-                                                "params": {
-                                                    "title": "error",
-                                                    "message": "responseError"
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
+            
         }
     }
 }

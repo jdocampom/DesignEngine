@@ -19,17 +19,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FDCB8BCD-7736-4010-B9AB-FF0EA24B1167"
+            uuid = "63B2202D-81D3-48E6-9D0E-8F86FAB0D89C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ITUIBuilderKit/Sources/ITUIBuilderKit/UI Components/Labels/Title Label/ITTitleLabelViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "labelAlignment"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66702A64-76BE-4083-832A-0539F037A6EC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ITUIBuilderKit/Sources/ITUIBuilderKit/Screen Layout/Header/ITHeaderSectionView.swift"
+            filePath = "DesignEngine/INTurnAroundPlan.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "INTurnAroundEvent"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "66702A64-76BE-4083-832A-0539F037A6EC - dad0085166bdf541"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignEngine.INTurnAroundPlan.INTurnAroundEvent.CodingKeys.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;DesignEngine.INTurnAroundPlan.INTurnAroundEvent.CodingKeys&gt;"
+                  moduleName = "DesignEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandiegoocampo/Developer/DesignEngine/DesignEngine/INTurnAroundPlan.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "66702A64-76BE-4083-832A-0539F037A6EC - 29c38727887948e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignEngine.INTurnAroundPlan.INTurnAroundEvent.CodingKeys.rawValue.getter : Swift.String"
+                  moduleName = "DesignEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandiegoocampo/Developer/DesignEngine/DesignEngine/INTurnAroundPlan.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "66702A64-76BE-4083-832A-0539F037A6EC - cac0b068365f7cbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignEngine.INTurnAroundPlan.INTurnAroundEvent.submissionDate.didset : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "DesignEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandiegoocampo/Developer/DesignEngine/DesignEngine/INTurnAroundPlan.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "1028">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "910C6E18-FCA4-49CF-BA4C-1DE19F87D451"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DesignEngine/INTurnAroundPlan.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "INTurnAroundEvent"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "910C6E18-FCA4-49CF-BA4C-1DE19F87D451 - cac0b068365f7b39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignEngine.INTurnAroundPlan.INTurnAroundEvent.submissionDate.didset : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "DesignEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandiegoocampo/Developer/DesignEngine/DesignEngine/INTurnAroundPlan.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  uuid = "910C6E18-FCA4-49CF-BA4C-1DE19F87D451 - cac0b068365f7b39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DesignEngine.INTurnAroundPlan.INTurnAroundEvent.submissionDate.didset : Swift.Optional&lt;Foundation.Date&gt;"
+                  moduleName = "DesignEngine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juandiegoocampo/Developer/DesignEngine/DesignEngine/INTurnAroundPlan.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "448">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
