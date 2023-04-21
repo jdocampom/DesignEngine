@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ITScreenView(
-            withViewElement: Bundle.main.decode("check_in.json"),
+            withViewElement: Bundle.main.decode("search_passenger_demo.json"),
             andTintColor: .accentColor
         )
     }

@@ -25,6 +25,7 @@
 		86F933CD29F2F20700D909FD /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F933CC29F2F20700D909FD /* Bundle+Ext.swift */; };
 		86F933CF29F2F46400D909FD /* TurnAroundEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F933CE29F2F46400D909FD /* TurnAroundEventView.swift */; };
 		86F933D129F2F47C00D909FD /* TurnAroundEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F933D029F2F47C00D909FD /* TurnAroundEventViewModel.swift */; };
+		86F933D329F33FDC00D909FD /* search_passenger_demo.json in Resources */ = {isa = PBXBuildFile; fileRef = 86F933D229F33FDC00D909FD /* search_passenger_demo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		86F933CC29F2F20700D909FD /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		86F933CE29F2F46400D909FD /* TurnAroundEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnAroundEventView.swift; sourceTree = "<group>"; };
 		86F933D029F2F47C00D909FD /* TurnAroundEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnAroundEventViewModel.swift; sourceTree = "<group>"; };
+		86F933D229F33FDC00D909FD /* search_passenger_demo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_passenger_demo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				866ADC0729BA29340015E4CA /* Preview Content */,
 				86AAA11F29F1E87E00A48261 /* turnaround_plan.json */,
 				86F933C429F2E61000D909FD /* turnaround_plan_model.json */,
+				86F933D229F33FDC00D909FD /* search_passenger_demo.json */,
 				860B628F29C5071700D0F399 /* passenger_on_demand.json */,
 				86F91E4129F08966003C48F7 /* check_in.json */,
 				86EA1CB629EDE72500AFF2BD /* Colors.xcassets */,
@@ -194,6 +197,7 @@
 				866ADC0929BA29340015E4CA /* Preview Assets.xcassets in Resources */,
 				86EA1CB729EDE72500AFF2BD /* Colors.xcassets in Resources */,
 				86AAA12029F1E87E00A48261 /* turnaround_plan.json in Resources */,
+				86F933D329F33FDC00D909FD /* search_passenger_demo.json in Resources */,
 				86F933C529F2E61000D909FD /* turnaround_plan_model.json in Resources */,
 				866ADC0629BA29340015E4CA /* Assets.xcassets in Resources */,
 				86F91E4229F08966003C48F7 /* check_in.json in Resources */,

@@ -1,0 +1,107 @@
+
+{
+    "view": {
+        "id": "search_passenger",
+        "embedInNavigationView": true,
+        "showLargeTitle": false,
+        "header": {
+            "rows": [
+                {
+                    "id": 1,
+                    "verticalFields": [
+                        {
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "PNR_id",
+                                    "label": "PNR",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TextInput",
+                                        "placeholder": "Please enter a PNR i.e P3DG45",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "verticalFields": [
+                        {
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "suername_id",
+                                    "label": "Surname",
+                                    "width":"100%",
+                                    "contents": {
+                                        "type": "TextInput",
+                                        "placeholder": "Please enter a surname",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "details": {
+            
+        },
+        "footer": {
+            "rows": [
+                {
+                    "id": 1,
+                    "verticalFields": [
+                        {
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "search_id",
+                                    "label": "",
+                                    "mandatory": false,
+                                    "contents": {
+                                        "type": "Button",
+                                        "subType": "Search",
+                                        "text": "Search",
+                                        "onClickAction": {
+                                            "action": "Server",
+                                            "fields": {
+                                                "path": "searchByBooking",
+                                                "params": {
+                                                    "surname":"suername_id",
+                                                    "pnr":"PNR_id"
+                                                },
+                                                "onSucessAction": {
+                                                    "action": "Navigation",
+                                                    "fields": {
+                                                        "path": "passenger_details",
+                                                        "params": {
+                                                            "passengers": "responseData"
+                                                        }
+                                                    }
+                                                },
+                                                "onErrorAction": {
+                                                    "action": "NotificationAlert",
+                                                    "fields": {
+                                                        "params": {
+                                                            "title": "error",
+                                                            "message": "responseError"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
