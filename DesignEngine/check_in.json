@@ -80,43 +80,37 @@
                             "horizontalFields": [
                                 {
                                     "id": "apis_status_indicator_1",
-                                    "rowWidth": 1,
                                     "label": "OK",
                                     "contents": {
                                         "type": "StatusLabel",
                                         "text": ""
                                     }
                                 },
-                                
-                                
-                                
                                 {
                                     "id": "apis_status_indicator_2",
-                                    "label": "FLAG",
-                                    "rowWidth": 1,
+                                    "label": "",
                                     "contents": {
                                         "type": "StatusLabel",
                                         "text": ""
-                                    }
-                                },
-                                {
-                                    "id": "apis_status_indicator_3",
-                                    "rowWidth": 2,
-                                    "label": "WARNING",
-                                    "contents": {
-                                        "type": "StatusLabel",
-                                        "text": ""
-                                    }
-                                }
-                                ,
-                                {
-                                    "id": "apis_status_indicator_4",
-                                    "rowWidth": 2,
-                                    "label": "CANCEL",
-                                    "contents": {
-                                        "type": "StatusLabel",
-                                        "text": ""
-                                    }
+                                    },
+                                    "embeddedFields" : [
+                                        {
+                                            "id": "apis_status_indicator_2",
+                                            "label": "FLAG",
+                                            "contents": {
+                                                "type": "StatusLabel",
+                                                "text": ""
+                                            }
+                                        },
+                                        {
+                                            "id": "apis_status_indicator_3",
+                                            "label": "WARNING",
+                                            "contents": {
+                                                "type": "StatusLabel",
+                                                "text": ""
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         }
