@@ -10,7 +10,7 @@
             "rows": [
                 {
                     "id": 1,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -46,7 +46,7 @@
                 },
                 {
                     "id": 2,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -82,7 +82,7 @@
                 },
                 {
                     "id": 3,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -146,7 +146,7 @@
                 },
                 {
                     "id": 4,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -182,7 +182,7 @@
                 },
                 {
                     "id": 5,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -218,7 +218,7 @@
                 },
                 {
                     "id": 6,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -254,7 +254,7 @@
                 },
                 {
                     "id": 7,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -290,7 +290,7 @@
                 },
                 {
                     "id": 8,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -326,7 +326,7 @@
                 },
                 {
                     "id": 9,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -362,7 +362,7 @@
                 },
                 {
                     "id": 10,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -398,7 +398,7 @@
                 },
                 {
                     "id": 11,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -434,7 +434,7 @@
                 },
                 {
                     "id": 12,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -470,7 +470,7 @@
                 },
                 {
                     "id": 13,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -506,7 +506,7 @@
                 },
                 {
                     "id": 14,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -542,7 +542,7 @@
                 },
                 {
                     "id": 15,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [
@@ -578,7 +578,7 @@
                 },
                 {
                     "id": 16,
-                    "items": [
+                    "verticalFields": [
                         {
                             "id": 1,
                             "fields": [

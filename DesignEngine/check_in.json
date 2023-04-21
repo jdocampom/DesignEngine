@@ -8,250 +8,291 @@
             "rows": [
                 {
                     "id": 1,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "passenger_name",
-                            "label": "SURNAME/FIRSTNAME",
-                            "contents": {
-                                "type": "TitleLabel",
-                                "text": ""
-                            }
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "passenger_name",
+                                    "label": "SURNAME/FIRSTNAME",
+                                    "contents": {
+                                        "type": "TitleLabel",
+                                        "text": ""
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "check_in",
-                            "label": "",
-                            "mandatory": false,
-                            "contents": {
-                                "type": "Button",
-                                "subType": "CheckIn",
-                                "text": "Check-In",
-                                "onClickAction": {
-                                    "action": "Server",
-                                    "fields": {
-                                        "path": "checkPassenger",
-                                        "params": {
-                                            "surname":"suername_id",
-                                            "pnr":"PNR_id"
-                                        },
-                                        "onSucessAction": {
-                                            "action": "Navigation",
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "check_in",
+                                    "label": "",
+                                    "mandatory": false,
+                                    "contents": {
+                                        "type": "Button",
+                                        "subType": "CheckIn",
+                                        "text": "Check-In",
+                                        "onClickAction": {
+                                            "action": "Server",
                                             "fields": {
-                                                "path": "passenger_details",
+                                                "path": "checkPassenger",
                                                 "params": {
-                                                    "passengers": "checkPassenger"
-                                                }
-                                            }
-                                        },
-                                        "onErrorAction": {
-                                            "action": "NotificationAlert",
-                                            "fields": {
-                                                "params": {
-                                                    "title": "error",
-                                                    "message": "responseError"
+                                                    "surname":"suername_id",
+                                                    "pnr":"PNR_id"
+                                                },
+                                                "onSucessAction": {
+                                                    "action": "Navigation",
+                                                    "fields": {
+                                                        "path": "passenger_details",
+                                                        "params": {
+                                                            "passengers": "checkPassenger"
+                                                        }
+                                                    }
+                                                },
+                                                "onErrorAction": {
+                                                    "action": "NotificationAlert",
+                                                    "fields": {
+                                                        "params": {
+                                                            "title": "error",
+                                                            "message": "responseError"
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                            }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "rowWidth": 4,
-                    "fields": [
-                        
-                        
+                    "verticalFields": [
                         {
-                            "id": "apis_status_indicator_1",
-                            "rowWidth": 1,
-                            "label": "OK",
-                            "contents": {
-                                "type": "StatusLabel",
-                                "text": ""
-                            }
-                        },
-                        
-                        
-                        
-                        {
-                            "id": "apis_status_indicator_2",
-                            "label": "FLAG",
-                            "rowWidth": 1,
-                            "contents": {
-                                "type": "StatusLabel",
-                                "text": ""
-                            }
-                        },
-                        {
-                            "id": "apis_status_indicator_3",
-                            "rowWidth": 2,
-                            "label": "WARNING",
-                            "contents": {
-                                "type": "StatusLabel",
-                                "text": ""
-                            }
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "apis_status_indicator_1",
+                                    "rowWidth": 1,
+                                    "label": "OK",
+                                    "contents": {
+                                        "type": "StatusLabel",
+                                        "text": ""
+                                    }
+                                },
+                                
+                                
+                                
+                                {
+                                    "id": "apis_status_indicator_2",
+                                    "label": "FLAG",
+                                    "rowWidth": 1,
+                                    "contents": {
+                                        "type": "StatusLabel",
+                                        "text": ""
+                                    }
+                                },
+                                {
+                                    "id": "apis_status_indicator_3",
+                                    "rowWidth": 2,
+                                    "label": "WARNING",
+                                    "contents": {
+                                        "type": "StatusLabel",
+                                        "text": ""
+                                    }
+                                }
+                                ,
+                                {
+                                    "id": "apis_status_indicator_4",
+                                    "rowWidth": 2,
+                                    "label": "CANCEL",
+                                    "contents": {
+                                        "type": "StatusLabel",
+                                        "text": ""
+                                    }
+                                }
+                            ]
                         }
-                        
                     ]
                 },
                 {
                     "id": 4,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "flight_number",
-                            "label": "IN0117",
-                            "contents": {
-                                "type": "VerticalTextLabel",
-                                "text": "Flight Number"
-                            }
-                        },
-                        {
-                            "id": "flight_date",
-                            "label": "20APR-21:00",
-                            "contents": {
-                                "type": "VerticalTextLabel",
-                                "text": "Departure Date"
-                            }
-                        },
-                        {
-                            "id": "flight_itinerary",
-                            "label": "INK-BOG",
-                            "contents": {
-                                "type": "VerticalTextLabel",
-                                "text": "Itinerary"
-                            }
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "flight_number",
+                                    "label": "IN0117",
+                                    "contents": {
+                                        "type": "VerticalTextLabel",
+                                        "text": "Flight Number"
+                                    }
+                                },
+                                {
+                                    "id": "flight_date",
+                                    "label": "20APR-21:00",
+                                    "contents": {
+                                        "type": "VerticalTextLabel",
+                                        "text": "Departure Date"
+                                    }
+                                },
+                                {
+                                    "id": "flight_itinerary",
+                                    "label": "INK-BOG",
+                                    "contents": {
+                                        "type": "VerticalTextLabel",
+                                        "text": "Itinerary"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": 5,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "is_infant",
-                            "label": "NO",
-                            "contents": {
-                                "type": "VerticalTextLabel",
-                                "text": "Infant"
-                            }
-                        },
-                        {
-                            "id": "sequence_number",
-                            "label": "A83MD3",
-                            "contents": {
-                                "type": "VerticalTextLabel",
-                                "text": "Sequence"
-                            }
-                        },
-                        {
-                            "id": "seat_plan_button",
-                            "label": "",
-                            "mandatory": false,
-                            "contents": {
-                                "type": "Button",
-                                "subType": "SeatPlan",
-                                "text": "23A",
-                                "onClickAction": {
-                                    "action": "Server",
-                                    "fields": {
-                                        "path": "changeSeat",
-                                        "params": {
-                                            "passengerID": "passenger_id",
-                                            "seat": "seat"
-                                        },
-                                        "onSucessAction": {
-                                            "action": "Navigation",
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "is_infant",
+                                    "label": "NO",
+                                    "contents": {
+                                        "type": "VerticalTextLabel",
+                                        "text": "Infant"
+                                    }
+                                },
+                                {
+                                    "id": "sequence_number",
+                                    "label": "A83MD3",
+                                    "contents": {
+                                        "type": "VerticalTextLabel",
+                                        "text": "Sequence"
+                                    }
+                                },
+                                {
+                                    "id": "seat_plan_button",
+                                    "label": "",
+                                    "mandatory": false,
+                                    "contents": {
+                                        "type": "Button",
+                                        "subType": "SeatPlan",
+                                        "text": "23A",
+                                        "onClickAction": {
+                                            "action": "Server",
                                             "fields": {
-                                                "path": "seat_plan",
+                                                "path": "changeSeat",
                                                 "params": {
-                                                    "passengers": "seatPlan"
-                                                }
-                                            }
-                                        },
-                                        "onErrorAction": {
-                                            "action": "NotificationAlert",
-                                            "fields": {
-                                                "params": {
-                                                    "title": "error",
-                                                    "message": "responseError"
+                                                    "passengerID": "passenger_id",
+                                                    "seat": "seat"
+                                                },
+                                                "onSucessAction": {
+                                                    "action": "Navigation",
+                                                    "fields": {
+                                                        "path": "seat_plan",
+                                                        "params": {
+                                                            "passengers": "seatPlan"
+                                                        }
+                                                    }
+                                                },
+                                                "onErrorAction": {
+                                                    "action": "NotificationAlert",
+                                                    "fields": {
+                                                        "params": {
+                                                            "title": "error",
+                                                            "message": "responseError"
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                            }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": 6,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "baggage_allowance",
-                            "label": "20 Pieces",
-                            "contents": {
-                                "type": "HorizontalTextLabel",
-                                "text": "Allowance"
-                            }
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "baggage_allowance",
+                                    "label": "20 Pieces",
+                                    "contents": {
+                                        "type": "HorizontalTextLabel",
+                                        "text": "Allowance"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": 7,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "baggage_weight",
-                            "label": "Weight (kg)",
-                            "mandatory": true,
-                            "contents": {
-                                "type": "TextInput",
-                                "placeholder": "i.e 15",
-                                "text": ""
-                            }
-                        },
-                        {
-                            "id": "add_bagtag_button",
-                            "label": "",
-                            "mandatory": false,
-                            "contents": {
-                                "type": "Button",
-                                "subType": "AddBagTag",
-                                "text": "Add Tag",
-                                "onClickAction": {
-                                    "action": "Server",
-                                    "fields": {
-                                        "path": "addBagTag",
-                                        "params": {
-                                            "passengerID": "passenger_id",
-                                            "seat": "seat"
-                                        },
-                                        "onSucessAction": {
-                                            "action": "Navigation",
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "baggage_weight",
+                                    "label": "Weight (kg)",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TextInput",
+                                        "placeholder": "i.e 15",
+                                        "text": ""
+                                    }
+                                },
+                                {
+                                    "id": "add_bagtag_button",
+                                    "label": "",
+                                    "mandatory": false,
+                                    "contents": {
+                                        "type": "Button",
+                                        "subType": "AddBagTag",
+                                        "text": "Add Tag",
+                                        "onClickAction": {
+                                            "action": "Server",
                                             "fields": {
-                                                "path": "seat_plan",
+                                                "path": "addBagTag",
                                                 "params": {
-                                                    "passengers": "seatPlan"
-                                                }
-                                            }
-                                        },
-                                        "onErrorAction": {
-                                            "action": "NotificationAlert",
-                                            "fields": {
-                                                "params": {
-                                                    "title": "error",
-                                                    "message": "responseError"
+                                                    "passengerID": "passenger_id",
+                                                    "seat": "seat"
+                                                },
+                                                "onSucessAction": {
+                                                    "action": "Navigation",
+                                                    "fields": {
+                                                        "path": "seat_plan",
+                                                        "params": {
+                                                            "passengers": "seatPlan"
+                                                        }
+                                                    }
+                                                },
+                                                "onErrorAction": {
+                                                    "action": "NotificationAlert",
+                                                    "fields": {
+                                                        "params": {
+                                                            "title": "error",
+                                                            "message": "responseError"
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                            }
+                            ]
                         }
                     ]
                 }
@@ -261,141 +302,58 @@
             "rows": [
                 {
                     "id": 1,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "baggage_tag_cell_1",
-                            "label": "LIVE",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "9 kg",
-                                "text": "3020112233"
-                            }
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "baggage_tag_cell_1",
+                                    "label": "LIVE",
+                                    "contents": {
+                                        "type": "BaggageStatusCell",
+                                        "placeholder": "9 kg",
+                                        "text": "3020112233"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": 2,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "baggage_tag_cell_2",
-                            "label": "UNPRINTED",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "11 kg",
-                                "text": "3020112234"
-                            }
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "baggage_tag_cell_2",
+                                    "label": "UNPRINTED",
+                                    "contents": {
+                                        "type": "BaggageStatusCell",
+                                        "placeholder": "11 kg",
+                                        "text": "3020112234"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "fields": [
+                    "verticalFields": [
                         {
-                            "id": "baggage_tag_cell_3",
-                            "label": "CANCEL",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "18 kg",
-                                "text": "3020112235"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": 4,
-                    "fields": [
-                        {
-                            "id": "baggage_tag_cell_4",
-                            "label": "INACTIVE",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "23 kg",
-                                "text": "3020112236"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": 5,
-                    "fields": [
-                        {
-                            "id": "baggage_tag_cell_5",
-                            "label": "LIVE",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "9 kg",
-                                "text": "3020112233"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": 6,
-                    "fields": [
-                        {
-                            "id": "baggage_tag_cell_6",
-                            "label": "UNPRINTED",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "11 kg",
-                                "text": "3020112234"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": 7,
-                    "fields": [
-                        {
-                            "id": "baggage_tag_cell_7",
-                            "label": "CANCEL",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "18 kg",
-                                "text": "3020112235"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": 8,
-                    "fields": [
-                        {
-                            "id": "baggage_tag_cell_8",
-                            "label": "INACTIVE",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "23 kg",
-                                "text": "3020112236"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": 9,
-                    "fields": [
-                        {
-                            "id": "baggage_tag_cell_9",
-                            "label": "LIVE",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "9 kg",
-                                "text": "3020112233"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": 10,
-                    "fields": [
-                        {
-                            "id": "baggage_tag_cell_10",
-                            "label": "UNPRINTED",
-                            "contents": {
-                                "type": "BaggageStatusCell",
-                                "placeholder": "11 kg",
-                                "text": "3020112234"
-                            }
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "baggage_tag_cell_3",
+                                    "label": "CANCEL",
+                                    "contents": {
+                                        "type": "BaggageStatusCell",
+                                        "placeholder": "18 kg",
+                                        "text": "3020112235"
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
