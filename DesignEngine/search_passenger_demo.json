@@ -35,7 +35,6 @@
                                 {
                                     "id": "suername_id",
                                     "label": "Surname",
-                                    "width":"100%",
                                     "contents": {
                                         "type": "TextInput",
                                         "placeholder": "Please enter a surname",

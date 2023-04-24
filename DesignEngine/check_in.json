@@ -303,6 +303,7 @@
                                 {
                                     "id": "baggage_tag_cell_1",
                                     "label": "LIVE",
+                                    "showDisclosureIndicator": true,
                                     "contents": {
                                         "type": "BaggageStatusCell",
                                         "placeholder": "9 kg",
@@ -322,6 +323,7 @@
                                 {
                                     "id": "baggage_tag_cell_2",
                                     "label": "UNPRINTED",
+                                    "showDisclosureIndicator": true,
                                     "contents": {
                                         "type": "BaggageStatusCell",
                                         "placeholder": "11 kg",
@@ -341,6 +343,7 @@
                                 {
                                     "id": "baggage_tag_cell_3",
                                     "label": "CANCEL",
+                                    "showDisclosureIndicator": true,
                                     "contents": {
                                         "type": "BaggageStatusCell",
                                         "placeholder": "18 kg",

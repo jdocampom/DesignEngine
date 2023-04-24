@@ -1,0 +1,57 @@
+{
+    "view": {
+        "id": "search_passenger",
+        "embedInNavigationView": true,
+        "showLargeTitle": false,
+        "header": {
+            "rows": [
+                {
+                    "id": 1,
+                    "verticalFields": [
+                        {
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "PNR_id",
+                                    "label": "PNR",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TextInput",
+                                        "placeholder": "Please enter a PNR i.e P3DG45",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "verticalFields": [
+                        {
+                            "id": 1,
+                            "horizontalFields": [
+                                {
+                                    "id": "surname_id",
+                                    "label": "Surname",
+                                    "mandatory": true,
+                                    "contents": {
+                                        "type": "TextInput",
+                                        "placeholder": "Please enter a PNR i.e P3DG45",
+                                        "text": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "details": {
+            "rows": []
+        },
+        "footer": {
+            "rows": []
+        }
+    }
+}
